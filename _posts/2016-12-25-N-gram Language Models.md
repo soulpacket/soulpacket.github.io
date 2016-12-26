@@ -39,4 +39,10 @@ tags:
 
 * 请注意，前面我们说过 V 是所有的可能的不同的n-Gram的数量，在这个例子中，它其实就是语料库中的词汇量，而这个词汇量是不包括 \<s> 的，但却需要包括 \</s>。 对此可以这样来理解，由于符号 \<s> 表示一个句子的开始，所以评估概率 P(\<s>|w′) 是没有意义的，因为当给定单词 w′ 的情况下来评估下一个单词可能是 \<s> 的概率是没有任何意义的，因为这种情况并不会发生。但是，同样的情况对于结束符则是有意义的。
 如此一来，训练语料中未出现的n-Gram的概率不再为 0，而是一个大于 0 的较小的概率值。Add-one 平滑算法确实解决了我们的问题，但显然它也并不完美。由于训练语料中未出现n-Gram数量太多，平滑后，所有未出现的n-Gram占据了整个概率分布中的一个很大的比例。因此，在NLP中，Add-one给训练语料中没有出现过的 n-Gram 分配了太多的概率空间。此外，认为所有未出现的n-Gram概率相等是否合理其实也值得商榷。而且，对于出现在训练语料中的那些n-Gram，都增加同样的频度值，这是否欠妥，我们并不能给出一个明确的答案。
+
+## 评价方式(Perplexity)
+* Perplexity是一种衡量自然语言处理领域（NLP）中，语言模型的好坏的指标。定义如下:<img src="http://chart.googleapis.com/chart?cht=tx&chl=PPS%3DP(w_1w_2w_3...w_i)%5E%7B-%5Cfrac%7B1%7D%7BN%7D%7D" style="border:none;" />
+* 对于bigram模型而言，<img src="http://chart.googleapis.com/chart?cht=tx&chl=PPS%3D(%5Cprod_%7Bi%3D1%7D%5EN%20%5Cfrac%7B1%7D%7BP(w_i%7Cw_%7Bi-1%7D)%7D)%5E%7B-%5Cfrac%7B1%7D%7BN%7D%7D" style="border:none;" />
+* **连乘极容易造成数值下溢，所以应采用log方式换成连加**
+
 [python源码](https://github.com/soulpacket/pythonwindows/tree/master/n-gram)
