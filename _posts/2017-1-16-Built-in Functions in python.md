@@ -22,7 +22,7 @@ tags:
 * [delattr()] (#8)
 * [divmod()] (#9)
 * [enumerate()] (#10)
-* [eval()] (#11) **这个不理解**
+* [eval()] (#11)
 * [filter] (#12)
 
 <h4 id="1">abs(x)</h4>
