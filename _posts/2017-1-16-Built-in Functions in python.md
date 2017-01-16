@@ -1,4 +1,3 @@
-```
 ---
 layout:     post
 title:      "Built-in Functions in python"
@@ -9,7 +8,7 @@ header-img: "img/post-bg-unix-linux.jpg"
 tags:
     - python
 ---
-```
+
 
 >2017年的第一篇博客，今年要加倍努力(:立个flag
 
