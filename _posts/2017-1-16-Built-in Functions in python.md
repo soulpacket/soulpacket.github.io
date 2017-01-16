@@ -12,18 +12,18 @@ tags:
 
 >2017年的第一篇博客，今年要加倍努力(:立个flag
 
-* [abs()](#1)haha
-* [all()] (#2)
-* [any()] (#3)
-* [ascii] (#4)
-* [bin()] (#5)
-* [chr()] (#6)
-* [complex()] (#7)
-* [delattr()] (#8)
-* [divmod()] (#9)
-* [enumerate()] (#10)
-* [eval()] (#11)
-* [filter] (#12)
+* [abs()](#1)
+* [all()](#2)
+* [any()](#3)
+* [ascii()](#4)
+* [bin()](#5)
+* [chr()](#6)
+* [complex()](#7)
+* [delattr()](#8)
+* [divmod()](#9)
+* [enumerate()](#10)
+* [eval()](#11)
+* [filter()](#12)
 
 <h4 id="1">abs(x)</h4>
 Return the absolute value of a number. The argument may be an integer or a floating point number. If the argument is a complex number, its magnitude is returned. 
