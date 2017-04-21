@@ -9,7 +9,7 @@ tags:
     - python
 ---
 
-* ##reverse string
+* ##reverse string##
 
 ```python
 >>> 'hello world'[::-1]
@@ -24,13 +24,13 @@ tags:
 
 > reversed() return an object,so we need to convert type of it.
 
-* ##get all indices of whatever we want in a list
+* ##get all indices of whatever we want in a list##
 
 ```python
 indices = [i for i, x in enumerate(my_list) if x == "whatever"]
 ```
 
-* ##find the intersection of multiple sets in python
+* ##find the intersection of multiple sets in python##
 
 ```python
 u = set.intersection(set_1, set_2, set_3)
