@@ -7,6 +7,7 @@ author:     "Mr. freedom"
 header-img: "img/post-bg-unix-linux.jpg"
 tags:
     - python
+    - TensorFlow
 ---
 
 
