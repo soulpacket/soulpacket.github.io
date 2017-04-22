@@ -1,14 +1,14 @@
 ---
-layout: 		post
-title: 		"Intro to TrnsorFlow"
-subtitle:	   "Udacity"
-date: 			2017-4-22
-author: 		"Mr. freedom"
-header-img: 	"/img/post-bg-2015.jpg"
+layout:     post
+title:      "Intro to TensorFlow"
+subtitle:   "Udacity"
+date:       2017-4-22
+author:     "Mr. freedom"
+header-img: "img/post-bg-unix-linux.jpg"
 tags:
-	 - python
-	 - Tensorflow
+    - python
 ---
+
 
 ## Hello, Tensor World!
 
