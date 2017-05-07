@@ -63,3 +63,21 @@ seed(1)
 lucky_number = randint(1, 100)
 ```
 Note: 这里选择了相同的种子，会生成相同的随机数。
+
+## snail
+
+![picture](http://www.haan.lu/files/2513/8347/2456/snail.png)
+
+```python
+array = [[1,2,3],
+         [8,9,4],
+         [7,6,5]]
+snail(array) #=> [1,2,3,4,5,6,7,8,9]
+```
+
+solution:  
+
+```python
+def snail(array):
+    return list(array[0]) + snail(zip(*array[1:])[::-1]) if array else []
+```
