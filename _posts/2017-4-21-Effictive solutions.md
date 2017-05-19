@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "some effective algorithm in Python"
+title:      "Effective solutions in Python"
 subtitle:   "record in CodeWar"
 date:       2016-12-25
 author:     "Mr. freedom"
@@ -81,3 +81,18 @@ solution:
 def snail(array):
     return list(array[0]) + snail(zip(*array[1:])[::-1]) if array else []
 ```
+
+## magic class
+
+```python
+class add(int):
+    def __call__(self,n):
+        return add(self+n)
+>>>add(1)
+1
+>>>add(1)(2)
+3
+```
+
+* ```add``` inherit from ```int``` class, default int()=0
+* add(1).__call__(2)==3 is equal with add(1)(2)
