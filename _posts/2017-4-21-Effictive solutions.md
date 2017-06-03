@@ -96,3 +96,11 @@ class add(int):
 
 * ```add``` inherit from ```int``` class, default int()=0
 * add(1).__call__(2)==3 is equal with add(1)(2)
+
+
+## How to generate all permutations of a iterable in python
+
+```python
+import itertools
+itertools.permutations(iterable)
+```
