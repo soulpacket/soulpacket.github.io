@@ -101,6 +101,11 @@ class add(int):
 ## How to generate all permutations of a iterable in python
 
 ```python
-import itertools
-itertools.permutations(iterable)
+import itertools # A 有序
+itertools.permutations(iterable, a)
+```
+
+```python
+import itertools. # C 无序
+itertools.combinations(iterable, a)
 ```
